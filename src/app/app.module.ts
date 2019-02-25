@@ -8,6 +8,10 @@ import { FormsModule } from '@angular/forms';
 import { LoginComponent } from './login/login.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
+import { MainComponent } from './main/main.component';
+import { BodyComponent } from './body/body.component';
+import { ForgotPasswordComponent } from './login/forgot-password/forgot-password.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +19,10 @@ import { HeaderComponent } from './header/header.component';
     LoginComponent,
     FooterComponent,
     HeaderComponent,
+    MainComponent,
+    BodyComponent,
+    ForgotPasswordComponent,
+    HomeComponent
 
   ],
   imports: [
@@ -27,8 +35,16 @@ import { HeaderComponent } from './header/header.component';
         component:LoginComponent
       },
       {
-      path:'centerpage',
-      component:HeaderComponent
+      path:'mainpage',
+      component:MainComponent
+      },
+      {
+      path:'forgotpassword',
+      component:ForgotPasswordComponent
+      },
+      {
+        path:'homepage',
+        component:HomeComponent
       }
       ])
   ],

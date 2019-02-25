@@ -21,7 +21,7 @@ password:any="";
 
     if(user == "admin" && pass == "admin@123")
     {
-      this.router.navigate(['/','centerpage']);
+      this.router.navigate(['/','mainpage']);
       console.log("Login succesful");
     }
     else {
