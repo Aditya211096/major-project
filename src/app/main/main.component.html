@@ -1,16 +1,35 @@
 <app-header></app-header>
 
-
+<app-side-nav></app-side-nav>
 <div class="container">
-  <h2>Select Any Region!</h2>
-    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Areas
-    <span class="caret"></span></button>
-    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-      <li><a routerLink="/mainpage">HTML</a></li>
-      <li><a routerLink="/mainpage">CSS</a></li>
-      <li><a routerLink="/mainpage">JavaScript</a></li>
-    </ul>
+  <form>
+  <div class="dropdown text-center">
+      <button class="dropbtn" style="margin-left:520px"> Areas </button>
+      <div class="dropdown-content" style="margin-left:480px">
+        <a routerLink="/homepage">Hafeezpet</a>
+        <a routerLink="/homepage">Manikonda</a>
+        <a routerLink="/homepage">Sheikhpet</a>
+      </div>
   </div>
+ </form>
+</div>
+
+<!-- <div class="container text-center"> 
+    <form>
+      <div class="form-group text-center">
+        <label for="sel">Select Region (select one):</label>
+          <select class="form-control dropdown-size" id="sel text-center">
+            <option value="Select from Below"> Select One </option>
+            <option value="Hafeezpet"><a href=""></a>Hafeezpet</option>
+            <option>B</option>
+            <option>C</option>
+            <option>D</option>
+          </select>
+      </div>
+    </form>
+  </div> -->
+
+
 
 
 <app-footer></app-footer>

@@ -12,6 +12,7 @@ import { MainComponent } from './main/main.component';
 import { BodyComponent } from './body/body.component';
 import { ForgotPasswordComponent } from './login/forgot-password/forgot-password.component';
 import { HomeComponent } from './home/home.component';
+import { SideNavComponent } from './side-nav/side-nav.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { HomeComponent } from './home/home.component';
     MainComponent,
     BodyComponent,
     ForgotPasswordComponent,
-    HomeComponent
+    HomeComponent,
+    SideNavComponent
 
   ],
   imports: [
