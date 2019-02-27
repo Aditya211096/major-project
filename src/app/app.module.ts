@@ -13,6 +13,7 @@ import { BodyComponent } from './body/body.component';
 import { ForgotPasswordComponent } from './login/forgot-password/forgot-password.component';
 import { HomeComponent } from './home/home.component';
 import { SideNavComponent } from './side-nav/side-nav.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { SideNavComponent } from './side-nav/side-nav.component';
     BodyComponent,
     ForgotPasswordComponent,
     HomeComponent,
-    SideNavComponent
+    SideNavComponent,
+    AboutComponent
 
   ],
   imports: [
@@ -47,6 +49,10 @@ import { SideNavComponent } from './side-nav/side-nav.component';
       {
         path:'homepage',
         component:HomeComponent
+      },
+      {
+        path:'aboutpage',
+        component:AboutComponent
       }
       ])
   ],
