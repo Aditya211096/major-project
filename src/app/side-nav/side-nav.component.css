@@ -1,4 +1,8 @@
 /* The side navigation menu */
+.nav .open > a, 
+.nav .open > a:hover, 
+.nav .open > a:focus {background-color: transparent;}
+
 .sidebar {
     margin: 0;
     padding: 0;

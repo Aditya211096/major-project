@@ -98,58 +98,58 @@
         <div class="panel panel-default">
             <div class="panel-heading">
                 <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"> <h4 class="panel-title">
-                   Quesiton 1
+                   Add Members
                 </h4></a>
             </div>
             <div id="collapseOne" class="panel-collapse collapse in">
                 <div class="panel-body">
                     <div class="container register">
-                        <div class="row register-form" style="margin-top:120px; margin-left:100px">
+                        <div class="row register-form" style="margin-top:0px; margin-left:-40px">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="First Name *" value="" />
+                                    <input type="text" class="form-control" style="width: 350px" placeholder="First Name *" value="" />
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Last Name *" value="" />
+                                    <input type="text" class="form-control" style="width: 350px" placeholder="Last Name *" value="" />
                                 </div>
                                 <div class="form-group">
-                                    <input type="password" class="form-control" placeholder="Password *" value="" />
+                                    <input type="password" class="form-control" style="width: 350px" placeholder="Password *" value="" />
                                 </div>
                                 <div class="form-group">
-                                    <input type="password" class="form-control"  placeholder="Confirm Password *" value="" />
+                                    <input type="password" class="form-control"  style="width: 350px" placeholder="Confirm Password *" value="" />
                                 </div>
                                 <div class="form-group">
                                     <div class="maxl">
                                         <label class="radio inline"> 
-                                            <input type="radio" name="gender" value="male" checked>
-                                            <span> Male </span> 
-                                        </label>
-                                        <label class="radio inline"> 
-                                            <input type="radio" name="gender" value="female">
-                                            <span>Female </span> 
+                                            <input type="radio" name="gender" value="male" checked style="margin-left:0px">
+                                            <span style="margin-left:15px"> Male </span>
+                                            
+                                            <input type="radio" name="gender" value="female" style="margin-left:15px">
+                                            <span style="margin-left:30px">Female </span>                                             
                                         </label>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Your Email *" value="" />
+                                    <input type="email" class="form-control" style="width: 300px;margin-top:40px" placeholder="Your Email *" value="" />
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" minlength="10" maxlength="10" name="txtEmpPhone" class="form-control" placeholder="Your Phone *" value="" />
+                                    <input type="text" minlength="10" maxlength="10" name="txtEmpPhone" class="form-control" style="width: 300px;margin-top:40px" placeholder="Your Phone *" value="" />
                                 </div>
-                                <div class="form-group">
+                                <!-- <div class="form-group">
                                     <select class="form-control">
-                                        <option class="hidden"  selected disabled>Please select your Sequrity Question</option>
+                                        <option class="hidden"  style="width: 250px" selected disabled>Please select your Sequrity Question</option>
                                         <option>What is your Birthdate?</option>
                                         <option>What is Your old Phone Number</option>
                                         <option>What is your Pet Name?</option>
                                     </select>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Enter Your Answer *" value="" />
-                                </div>
-                                <input type="submit" class="btnRegister"  value="Register"/>
+                                </div> -->
+                                <!-- <div class="form-group">
+                                    <input type="text" class="form-control" style="width: 250px" placeholder="Enter Your Answer *" value="" />
+                                </div> -->
+                                <!-- <input type="submit" class="btnRegister"  value="Register"/> -->
+                                <button type="button" class="btn btn-dark" style="color:white; margin-top: 25px; margin-left: 100px; background-color: black">Register</button>
                             </div>
                         </div>
                         </div>
@@ -158,12 +158,13 @@
         </div>
         <div class="panel panel-default">
             <div class="panel-heading">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"> <h4 class="panel-title">
-                  Question Two
-                </h4></a>
+                <!-- <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">  -->
+                    <!-- <h4 class="panel-title">Question 2</h4></a> -->
+                        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseButtonExample" aria-expanded="true" aria-controls="collapseExample">
+                    Question 2</button>
             </div>
-            <div id="collapseTwo" class="panel-collapse collapse">
-                <div class="panel-body">
+            <div class="collapse" id="collapseButtonExample" >
+                <div class="card card-body">
                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt ipsum eget nisl accumsan, eu cursus tellus bibendum. Nam et ipsum scelerisque dolor consequat tempor vel vel tortor.</p>
 					<p>Ut finibus facilisis lacus, sit amet porttitor enim mollis sed. Nunc orci magna, iaculis sit amet magna non, tincidunt varius sem.</p>
                 </div>
