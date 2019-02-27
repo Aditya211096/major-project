@@ -14,6 +14,8 @@ import { ForgotPasswordComponent } from './login/forgot-password/forgot-password
 import { HomeComponent } from './home/home.component';
 import { SideNavComponent } from './side-nav/side-nav.component';
 import { AboutComponent } from './about/about.component';
+import { MembersComponent } from './members/members.component';
+import { AddmemberComponent } from './members/addmember/addmember.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { AboutComponent } from './about/about.component';
     ForgotPasswordComponent,
     HomeComponent,
     SideNavComponent,
-    AboutComponent
+    AboutComponent,
+    MembersComponent,
+    AddmemberComponent
 
   ],
   imports: [
@@ -53,6 +57,10 @@ import { AboutComponent } from './about/about.component';
       {
         path:'aboutpage',
         component:AboutComponent
+      },
+      {
+        path:'addmember',
+        component:AddmemberComponent
       }
       ])
   ],
