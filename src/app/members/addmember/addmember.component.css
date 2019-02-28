@@ -30,3 +30,9 @@
     background-color: black;
     padding: 1em;
 }
+.collapse{
+  display: none;
+}
+.panel{
+margin: 2rem 0;
+}
