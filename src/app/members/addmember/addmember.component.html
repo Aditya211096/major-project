@@ -5,32 +5,32 @@
 
 <div class="bs-example" style="margin-top:51px; margin-left:200px">
     <div class="panel-group" id="accordion">
-        <div class="panel panel-default" *ngFor="let i of [1]">
+        <div class="panel panel-default">
             <div class="panel-heading">
                 <!-- <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"> <h4 class="panel-title"></h4></a> -->
-                <button class="btn btn-primary"  type="button" #btn (click)="btn.toggle = !btn.toggle">
+                <button class="btn btn-primary"  type="button" #btn (click)="show(1)">
                         Add Member
-                    </button>                
+                </button>                
             </div>
 
             <!-- <div id="collapseOne" class="panel-collapse collapse in">
                 <div class="panel-body"> -->
-            <div [ngClass]="{collapse:!btn.toggle}">
+            <div  [class.collapse]='flag != 1'>
                 <div class="card card-body">
                     <div class="container register">
                         <div class="row register-form" style="margin-top:0px; margin-left:-20px">
                             <div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" required minlength="5" style="width: 350px" placeholder="First Name *" value="" />
+                                <div class="form-group" validate>
+                                    <input type="text" class="form-control" style="width: 350px" placeholder="Name *" value="" validate/>
                                 </div>
                                 <div class="form-group">
                                     <input type="text" class="form-control" style="width: 350px" placeholder="Alias Name *" value="" />
                                 </div>
                                 <div class="form-group">
-                                    <input type="password" class="form-control" type="tel" style="width: 350px" placeholder="Mobile No. *" value="" />
+                                    <input type="number" class="form-control" type="tel" style="width: 350px" placeholder="Mobile No. *" value="" />
                                 </div>
                                 <div class="form-group">
-                                    <input type="password" class="form-control"  type="date" style="width: 350px" placeholder="Date of Birth *" value="" />
+                                    <input type="date" class="form-control"  type="date" style="width: 350px" placeholder="Date of Birth *" value="" />
                                 </div>
                                 <div class="form-group">
                                     <div class="maxl">
@@ -63,10 +63,10 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="email" class="form-control" type="email" style="width: 300px;margin-top:40px" placeholder="Your Email *" value="" />
+                                    <input type="email" class="form-control" type="email" style="width: 300px;margin-top:40px" placeholder="Your Email *" value="" required />
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" minlength="10" maxlength="10" type="number" name="txtEmpPhone" class="form-control" style="width: 300px;margin-top:40px" placeholder="Age *" value="" />
+                                    <input type="number" minlength="1" maxlength="3" type="number" name="txtEmpPhone" class="form-control" style="width: 300px;margin-top:40px" placeholder="Age *" value="" required/>
                                 </div>
                                 <!-- <div class="form-group">
                                     <select class="form-control">
@@ -80,7 +80,7 @@
                                     <input type="text" class="form-control" style="width: 250px" placeholder="Enter Your Answer *" value="" />
                                 </div> -->
                                 <!-- <input type="submit" class="btnRegister"  value="Register"/> -->
-                                <button type="button" class="btn btn-dark" style="color:white; margin-top: 25px; margin-left: 100px; background-color: black">Register</button>
+                                <button type="submit" class="btn btn-dark" style="color:white; margin-top: 25px; margin-left: 100px; background-color: black">Register</button>
                             </div>
                         </div>
                         </div>
@@ -90,17 +90,17 @@
 
 
 
-        <div class="panel panel-default" *ngFor="let i of [1]">
+        <div class="panel panel-default">
             <div class="panel-heading">
                 <!-- <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">  -->
                     <!-- <h4 class="panel-title">Question 2</h4></a>
                      data-toggle="collapse" data-target="#collapseButtonExample" aria-expanded="true" aria-controls="collapseExample" 
                     class="collapse" id="collapseButtonExample" -->
-                        <button class="btn btn-primary" type="button" #btn (click)="btn.toggle = !btn.toggle">
+                        <button class="btn btn-primary" type="button" #btn (click)="show(2)">
                             KYC Details
                         </button>
             </div>
-            <div [ngClass]="{collapse:!btn.toggle}">
+            <div  [class.collapse]='flag !=2'>
                 <div class="card card-body">
                         <div class="container register">
                                 <div class="row register-form" style="margin-top:0px; margin-left:-20px">
@@ -169,17 +169,17 @@
             </div>
         </div> -->
 
-        <div class="panel panel-default" *ngFor="let i of [1]">
+        <div class="panel panel-default" >
                 <div class="panel-heading">
                     <!-- <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">  -->
                         <!-- <h4 class="panel-title">Question 2</h4></a>
                          data-toggle="collapse" data-target="#collapseButtonExample" aria-expanded="true" aria-controls="collapseExample" 
                         class="collapse" id="collapseButtonExample" -->
-                            <button class="btn btn-primary" type="button" #btn (click)="btn.toggle = !btn.toggle">
+                            <button class="btn btn-primary" type="button" #btn (click)="show(3)">
                                 Address Details
                             </button>
                 </div>
-                <div [ngClass]="{collapse:!btn.toggle}">
+                <div [class.collapse]='flag != 3'>
                     <div class="card card-body">
                             <div class="container register">
                                     <div class="row register-form" style="margin-top:0px; margin-left:-20px">

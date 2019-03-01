@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddmemberComponent implements OnInit {
 
+flag:number;
+
+show(obj:number) {
+  this.flag = obj;
+}
   
   constructor() { 
     
